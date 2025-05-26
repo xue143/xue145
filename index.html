@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <!--标题-->
+    <header class="header">
+        <h1>刘婷婷 liutingting</h1>
+        <p>扬州信息工程系计算机应用网络</p>
+
+    </header>
+    <!--导航-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">刘婷婷<img src="images/per.jpg" style="width:3rem; height:3rem; border: radius 50%; "></div>
+            <button class="hbb" id="hbb">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#" class="nav-link">个人介绍</a>
+                <a href="#" class="nav-link">教育背景</a>
+                <a href="#" class="nav-link">兴趣爱好</a>
+                <a href="#" class="nav-link">联系方式</a>
+            </div>
+        </div>
+        <script>
+            const hbb=document.getElementById('hbb');
+            const navlinks=document.querySelector('.nav-links');
+            hbb.addEventListener('click',()=>{
+                hbb.classList.toggle('active');
+                navlinks.classList.toggle('active');
+            });
+        </script>
+    </nav>
+    <!--内容区-->
+    <main class="main-content">
+        <div class="primary-content">
+            <div class="content-card">
+                <h2>个人介绍</h2>
+                <p></p>
+                <p>当我们真正热爱这世界时，我们才真正生活在这世上。</p>
+            </div>
+            <div class="content-card">
+                <h3>教育背景</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>初中</h4>
+                        <p>2017-2019年 实验初中</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>大专</h4>
+                        <p>2019-2022年 技师学院</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>实习</h4>
+                        <p>2022-2025年 技师学院</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3>旅游日记</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>2024.11</h4>
+                        <p><img src="images/book1.jpg"></p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2024.12</h4>
+                        <p><img src="images/book2.jpg"></p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2025.2</h4>
+                        <p><img src="images/book3.jpg"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="asiderbar">
+            <div class="content-card">
+                <h3>兴趣爱好</h3>
+                <ul>
+                    <li>摄影</li>
+                    <li>旅游</li>
+                    <li>游戏</li>
+                    <li>唱歌</li>
+                </ul>
+            </div>
+        </aside>
+
+    </main>
+    <!--页脚-->
+    <footer>
+
+        liutingting的联系方式：16458752
+    </footer>
+</body>
+
+</html>
